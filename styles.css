@@ -1,0 +1,125 @@
+
+body, h1, h2, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+video {
+    max-width: 45%;
+    border: 2px solid #ccc;
+    background-color: #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#chatBox {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+#chatInput, #sendChat {
+    padding: 10px;
+    border: none;
+}
+
+#chatInput {
+    border-top: 1px solid #ccc;
+}
+
+#sendChat {
+    background-color: #007BFF;
+    cursor: pointer;
+}
+
+button#endCall, button#stopRecording {
+    background-color: #FF0000; 
+}
+
+button#endCall:hover, button#stopRecording:hover {
+    background-color: #CC0000; 
+}
+
+button#startCall {
+    background-color: #00FF00; 
+}
+
+
+button#startCall:hover {
+    background-color: #00CC00; 
+}
+
+
+@media (max-width: 768px) {
+ 
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+button#startRecording {
+    background-color: #007BFF; 
+    color: #fff; 
+}
+
+
+button#startRecording:hover {
+    background-color: #0056b3; 
+}
